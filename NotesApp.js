@@ -13,4 +13,13 @@ function NoteApplication (author) {
 
 	}
 
+	this.listNotes = function(){
+        if(this.noteArray.length < 1){
+            console.log("There are no notes in the collection.");
+        }
+        else{for(let i = 0; i < this.noteArray.length; i++){
+                console.log("\nNote ID: " + this.noteArray[i]);
+                console.log(this.noteArray[i]);
+                console.log("\n\nBy Author " + this.author + "\n");
+         }    
 }
