@@ -8,7 +8,7 @@ Open the app in an editor and create an object of the NotesApp class
 
 ## Credits
 
-Trainers at Andela Bootcamp
+Andela Bootcamp Trainers
 
-Bootcampers
+Andela Bootcampers
 
