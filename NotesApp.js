@@ -70,12 +70,12 @@ function NoteApplication (author) {
 	};
 
 	this.edit = function(note_id, new_content){
-		if ((note_id < 0) || (note_id > (this.notes.length - 1))){
-			console.log("Invalid Note ID. Please, Try again.");
-		}
-		else{
+		if((parseInt(note_id, 10) + 0 < 1)||(parseInt(note_id, 10) > (this.notes.length - 1))){
 			this.notes[note_id] = new_content;
 			console.log("Note Edited Successfully");
+		}else{
+			this.notes.push(new_content);
+			console.log("Invalid Note ID. A new note was created.");
 		}
-	};
+	}
 }
