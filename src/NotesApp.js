@@ -1,9 +1,9 @@
-function NoteApplication (author) {
+function noteApplication (author) {
 	this.author = author;
 	this.notes = [];
 
 	this.create = function(note_content) {
-		if (note_content.length > 0) {
+		if (note_content.trim().length > 0) {
       		this.notes.push(note_content);
       		return "You have just created a note";
       	}
